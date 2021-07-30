@@ -1,8 +1,18 @@
+{% load static %}
 <html>
-<head>
-<title>template test</title>
-</head>
-<body>
-<p>This is template test.</p>
-</body>
+    <head>
+        <title>Django Test</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/introduct.css' %}">
+    </head>
+    <body>
+        <div class="text-container">
+            <span class="reg-text">Disappear</span>
+            <span class="letter">H</span><span class="letter">e</span><span class="letter">r</span><span class="letter">e</span><span  class="letter">.</span>
+        </div>
+    </body>
+
+    <script src="{% static 'js/introduct.js' %}"></script>
+
 </html>
