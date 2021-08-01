@@ -1,0 +1,40 @@
+{% load static %}
+<!doctype html>
+<html>
+    <head>
+        <title>Django Test</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    </head>
+
+    <body>
+        
+        <!-- イントロダクション -->
+        <div id=intro_container>
+            <ul>
+                <li>Passing</li>
+                <li data-heading="t">the</li>
+                <li>Center</li>
+                <li>Line</li>
+            </ul>
+        </div>
+
+
+        <!-- 画面遷移 -->
+        <div class="splash_bg"></div>
+        
+
+        <!-- メインコンテナ -->
+        <div id="main_container">
+            <header>
+                <p>Menu</p>
+            </header> 
+        </div>
+    </body>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="{% static 'js/main.js' %}"></script>
+
+</html>
